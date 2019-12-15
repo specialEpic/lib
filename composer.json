@@ -1,0 +1,34 @@
+{
+  "name": "specialepic/lib",
+  "description": "lablib",
+  "keywords": ["lab"],
+  "license": "WTFPL",
+  "authors": [
+    {
+      "name": "Egorov"
+    }
+  ],
+  "require": {
+    "php":">=5.0.0",
+    "rok9ru/trpo-core":"1.0"
+  },
+  "repositories":[
+    {
+      "type":"package",
+      "package":{
+        "name":"rok9ru/trpo-core",
+        "version":"1.0",
+        "source":{
+          "type":"git",
+          "url":"https://github.com/rok9ru/trpo-core.git",
+          "reference":"master"
+        }
+      }
+    }
+  ],
+  "autoload":{
+    "classmap": [
+      "/"
+    ]
+  }
+}

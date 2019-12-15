@@ -1,5 +1,5 @@
 <?php
 namespace RzekaMansur;
 
-class RzekaMansurException extends \RuntimeException {
+class RzekaMansur_Exception extends \RuntimeException {
 }
