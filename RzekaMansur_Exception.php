@@ -1,5 +1,5 @@
 <?php
-namespace RzekaMansur;
+namespace specialepic;
 
 class RzekaMansur_Exception extends \RuntimeException {
 }

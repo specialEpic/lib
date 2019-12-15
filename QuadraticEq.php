@@ -1,5 +1,5 @@
 <?php
-namespace RzekaMansur;
+namespace specialepic;
 use core;
 class QuadraticEq extends LinearEq implements core\EquationInterface
 	{

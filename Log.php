@@ -1,5 +1,5 @@
 <?php
-namespace RzekaMansur;
+namespace specialepic;
 use core;
 
 class Log extends core\LogAbstract implements core\LogInterface
