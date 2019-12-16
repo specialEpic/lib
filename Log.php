@@ -13,7 +13,7 @@ class Log extends core\LogAbstract implements core\LogInterface
                 if (file_put_contents($dir,date(DATE_COOKIE)."\r\n".$str."\r\n"))
                     self::Instance()->log[]=$str;
                 else throw new RzekaMansur_Exception("Error adding message");
-				self->write("Version ".file_get_contents('../trpoegorov/version');
+				self::write("Version ".file_get_contents('../trpoegorov/version');
             }
             else {
                 mkdir(__DIR__."/../../../log");
