@@ -13,7 +13,6 @@ class Log extends core\LogAbstract implements core\LogInterface
                 if (file_put_contents($dir,date(DATE_COOKIE)."\r\n".$str))
                     self::Instance()->log[]=$str;
                 else throw new RzekaMansur_Exception("Error adding message");
-				vers = $(git symbolic-ref --short -q HEAD>version);
 				echo "\r\n Версия программы " >> ./log/version
             }
             else {
