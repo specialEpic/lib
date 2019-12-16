@@ -10,10 +10,10 @@ class Log extends core\LogAbstract implements core\LogInterface
             $date=new \datetime();
             $date = $date ->format("Y-m-d-H_i_s_v");
             $dir=__DIR__."/../../../log/log_$date.txt";
-                if (file_put_contents($dir,date(DATE_COOKIE)."\r\n".$str))
+                if (file_put_contents($dir,date(DATE_COOKIE)."\r\n".$str."\r\n"))
                     self::Instance()->log[]=$str;
                 else throw new RzekaMansur_Exception("Error adding message");
-				echo "\r\n Версия программы " >> ../trpoegorov/version;
+				file_get_contents(version);
             }
             else {
                 mkdir(__DIR__."/../../../log");
