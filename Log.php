@@ -9,7 +9,7 @@ class Log extends core\LogAbstract implements core\LogInterface
             if(file_exists(__DIR__."/../../../log")){
             $date=new \datetime();
             $date = $date ->format("Y-m-d-H_i_s_v");
-            $dir=__DIR__."/../../../log/log_$date.txt";
+            $dir=__DIR__."/../../../log/log_$date.log";
                 if (file_put_contents($dir,"Version: ".file_get_contents("../trpoegorov/version")."\r\n".$str))
                     self::Instance()->log[]=$str;
                 else throw new RzekaMansur_Exception("Error adding message");
