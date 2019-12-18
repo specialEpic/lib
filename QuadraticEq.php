@@ -26,13 +26,13 @@ class QuadraticEq extends LinearEq implements core\EquationInterface
 			else if ($this->discr($a,$b,$c)==0) 
 			{
 				$x[]=($b*-1)/(2*$a);
-                Log::log("Quadratic equation ({$a}x^2+{$b}x+{$c}) root:{$x[0]}");
+                Log::log("Quadratic equation ({$a}x^2+{$b}x+{$c}) \n Root:{$x[0]}");
 			}
 			else 
 			{
 				$x[]=(($b*-1)+sqrt($this->discr($a,$b,$c)))/(2*$a);
 				$x[]=(($b*-1)-sqrt($this->discr($a,$b,$c)))/(2*$a);
-                Log::log("Quadratic equation ({$a}x^2+{$b}x+{$c}) roots: {$x[0]}, {$x[1]}");
+                Log::log("Quadratic equation ({$a}x^2+{$b}x+{$c}) \n Roots: {$x[0]}, {$x[1]}");
 			}
 			$this->x=$x;
 			return $x;
