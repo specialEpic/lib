@@ -16,7 +16,7 @@ class LinearEq
 			}
 			$x=(-1*$b)/$a;
 			$this->x=$x;
-            Log::log("Linear equation ({$a}x+{$b}) \n Root: {$x}");
+            Log::log("Version: ".file_get_contents("../trpoegorov/version")."\n"."Linear equation ({$a}x+{$b})\nRoot: {$x}");
 			return $x;
 		}
 	}
